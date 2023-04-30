@@ -1,5 +1,6 @@
 import { Code } from "@phosphor-icons/react";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { colors } from "../../styles/variables";
 import { Menu, NavItems, NavStyled } from "./navBar.styled";
 
@@ -11,7 +12,6 @@ interface NavType {
 
 export function NavBar({Items, Links}:NavType) {
 
-  const [active, setActive] = useState(0)
   const [show, setShow] = useState(false)
 
 
@@ -32,14 +32,12 @@ export function NavBar({Items, Links}:NavType) {
       <NavItems show={show} >
         {Items.map((i,k) => {
           return(
-            <a 
+            <NavLink 
               key={k} 
-              href={Links[k]}
-              className={active === k ? 'active' : ''}
-              onClick={() => setActive(k)}
+              to={Links[k]}
             >
               <li>{i}</li>
-            </a>
+            </NavLink>
           )
         })}
       </NavItems>
