@@ -11,6 +11,7 @@ export const GlobalStyled = createGlobalStyle`
   body{
     background-color: ${colors.gray1};
     font-family: ${fonts.default};
+    color: ${colors.gray7};
     line-height: 160%;
   }
 `
