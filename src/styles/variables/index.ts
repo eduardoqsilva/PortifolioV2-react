@@ -1,6 +1,6 @@
 export const fonts = {
-  default: '',
-  secundary: '',
+  default: 'Roboto, sans-serif',
+  secundary: 'Montserrat, sans-serif',
 } as const
 
 export const colors = {
