@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { colors } from "./variables";
+import { colors, fonts } from "./variables";
 
 export const GlobalStyled = createGlobalStyle`
   *{
@@ -9,6 +9,8 @@ export const GlobalStyled = createGlobalStyle`
   }
 
   body{
-    background-color: ${colors.gray1}
+    background-color: ${colors.gray1};
+    font-family: ${fonts.default};
+    line-height: 160%;
   }
 `
