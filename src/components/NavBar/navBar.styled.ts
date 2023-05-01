@@ -14,6 +14,7 @@ export const NavStyled = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 
   @media (max-width: 800px) {
     padding-right: 2rem;
@@ -37,7 +38,7 @@ export const NavItems = styled.ul<NavItems>`
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 8;
+    z-index: 50;
 
     background-color: ${colors.gray2};
     padding: 6rem 0 1rem 0;
@@ -104,7 +105,7 @@ export const Menu = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  z-index: 9;
+  z-index: 99;
 
   @media (max-width: 800px) {
     display: flex;
@@ -116,7 +117,7 @@ export const Menu = styled.div`
     height: 100%;
     appearance: none;
     background: transparent;
-    z-index: 10;
+    z-index: 100;
   }
 
   & span {

@@ -23,7 +23,7 @@ export const ContantContainer = styled.main`
 export const TextWrapper = styled.div`
   font-family: ${fonts.secundary};
   color: ${colors.white};
-  
+
   & h1 {
     font-size: 6rem;
     font-style: normal;
@@ -35,10 +35,41 @@ export const TextWrapper = styled.div`
   & h2 {
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 160%;
     letter-spacing: 0.497em;
     padding-left: 0.3rem;
+  }
+
+  @media (max-width: 1100px) {
+    & h1 {
+      font-size: 5rem;
+    }
+    & h2 {
+      font-size: 2.09rem;
+    }
+  }
+  @media (max-width: 900px) {
+    & h1 {
+      font-size: 4rem;
+    }
+    & h2 {
+      font-size: 1.67rem;
+    }
+  }
+  @media (max-width: 800px) {
+    text-align: center;
+    word-wrap: break-word;
+    width: 100%;
+    
+    & h1 {
+      font-size: 2rem;
+    }
+    & h2 {
+      font-size: 1.3rem;
+      width: 300px;
+      margin: auto;
+    }
   }
 `
 export const ButtonWrapper = styled.div`
@@ -48,6 +79,13 @@ export const ButtonWrapper = styled.div`
   gap: 2rem;
 
   margin-top: 3rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+  @media (max-width: 500px) {
+    gap: 1rem;
+  }
 `
 
 export const OrnamentsCont = styled.div`

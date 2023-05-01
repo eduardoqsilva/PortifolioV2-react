@@ -4,6 +4,7 @@ import { colors, fonts } from "../../styles/variables";
 export const ButtonHomeStyled = styled.button`
   width: 100%;
   max-width: 270px;
+  min-width: 260px;
   height: 57px;
 
   display: flex;
@@ -29,5 +30,11 @@ export const ButtonHomeStyled = styled.button`
   }
   &:active {
     transform: scale(0.95);
+  }
+
+  @media (max-width: 500px) {
+    gap: 0.6rem;
+    font-size: 0.8rem;
+    min-width: 250px;
   }
 `
