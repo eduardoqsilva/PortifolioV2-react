@@ -7,7 +7,7 @@ export const NavStyled = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.375rem 0 1.375rem 2rem;
+  padding: 1.375rem 0 0 2rem;
   
   color: ${colors.white};
 

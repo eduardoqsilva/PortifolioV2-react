@@ -1,6 +1,6 @@
 import { Code } from "@phosphor-icons/react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { colors } from "../../styles/variables";
 import { Menu, NavItems, NavStyled } from "./navBar.styled";
 
@@ -22,7 +22,7 @@ export function NavBar({Items, Links}:NavType) {
 
   return (
     <NavStyled>
-      <Code weight="bold" size={52} color={colors.white}/>
+      <Link to={'/'}><Code weight="bold" size={52} color={colors.white}/></Link>
         <Menu>
           <input type="checkbox" className="check" checked={show} onChange={handleClickMenu}/>
           <span className="trace"></span>
@@ -35,6 +35,7 @@ export function NavBar({Items, Links}:NavType) {
             <NavLink 
               key={k} 
               to={Links[k]}
+              onClick={() => setShow(false)}
             >
               <li>{i}</li>
             </NavLink>
