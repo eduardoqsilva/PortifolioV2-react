@@ -12,7 +12,7 @@ const rotate = keyframes`
 `
 
 export const ContantContainer = styled.main`
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   padding: 1.5rem;
 
