@@ -13,5 +13,7 @@ export const GlobalStyled = createGlobalStyle`
     font-family: ${fonts.default};
     color: ${colors.gray7};
     line-height: 160%;
+    overflow-x: hidden;
+    max-width: 100vh;
   }
 `
