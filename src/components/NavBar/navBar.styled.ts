@@ -1,13 +1,17 @@
 import styled from "styled-components";
 import { colors } from "../../styles/variables";
 
-export const NavStyled = styled.nav`
+
+interface TypeNav {
+  scroll: number
+}
+export const NavStyled = styled.nav<TypeNav>`
   width: 100%;
   
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.375rem 0 0 2rem;
+  padding: 1rem 0 1rem  2rem;
   
   color: ${colors.white};
 
@@ -15,11 +19,17 @@ export const NavStyled = styled.nav`
   top: 0;
   left: 0;
   z-index: 999;
+  ${(props) => props.scroll > 200 ? 
+    `background: rgba(0,0,0,0.4);`
+    : ''
+  }
 
   @media (max-width: 800px) {
     padding-right: 2rem;
-    & svg {
+    background-color: transparent;
+    & > a{
       opacity: 0;
+      pointer-events: none;
     }
   }
 `
@@ -47,10 +57,12 @@ export const NavItems = styled.ul<NavItems>`
   & a {
     text-decoration: none;
     padding: 0.5rem;
+    
     margin-right: 2rem;
+    /* margin-bottom: 1rem; */
+    
     position: relative;
     transition: all .5 ease-in-out;
-    margin-bottom: 1rem;
     
     @media (max-width: 800px) {
       background-color: ${colors.gray3};
