@@ -1,6 +1,8 @@
-import { BracketsCurly } from "@phosphor-icons/react";
+import { ArrowRight, BracketsCurly } from "@phosphor-icons/react";
 import { colors } from "../../styles/variables";
-import { CardExperienceWrapper, CardFormationWrapper, HeaderExperienceCard } from "./cards.styled";
+import { CardExperienceWrapper, CardFormationWrapper, CardProjectsWrapper, HeaderExperienceCard } from "./cards.styled";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 interface ExperienceType {
@@ -48,5 +50,35 @@ export function CardFormation({date, finish, name, title, type}:CardFormationTyp
       <h2>{title}</h2>
       <p>{name}</p>
     </CardFormationWrapper>
+  )
+}
+
+
+interface CardProjectType {
+  title: string
+  img: string
+  link: string
+}
+
+export function CardProject({title, img, link}:CardProjectType) {
+
+  const [isHover, setIsHover] = useState(false)
+
+  return (
+    <CardProjectsWrapper 
+      onMouseOver={() => setIsHover(true)}
+      onMouseOut={() => setIsHover(false)}
+      isHover={isHover}
+    >
+      <img className="img" src={img}/>
+      <div className="wrapper">
+        <h2>{title}</h2>
+        <Link to={link}>
+          <button onClick={() => setIsHover(true)}>
+            <ArrowRight size={20} color={colors.white}/>
+          </button>
+        </Link>
+      </div>
+    </CardProjectsWrapper>
   )
 }

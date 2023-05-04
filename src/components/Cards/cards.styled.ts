@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { colors } from "../../styles/variables";
 
+
+
 export const CardExperienceWrapper = styled.div`
   width: 100%;
   max-width: 700px;
@@ -147,4 +149,90 @@ export const CardFormationWrapper = styled.div`
       }
     }
   }
+`
+
+interface CardProjectsWrapperType {
+  isHover: boolean
+}
+export const CardProjectsWrapper = styled.div<CardProjectsWrapperType>`
+  width: 19.375rem;
+  height: 26.25rem;
+  border-radius: 16px;
+  position: relative;
+  border: 1px solid transparent;
+  transition: all 0.1s ease-in;
+  
+  -webkit-box-shadow: 0px 0px 12px 0px ${colors.gray2};
+  -moz-box-shadow: 0px 0px 12px 0px ${colors.gray2};
+  box-shadow: 0px 0px 12px 0px ${colors.gray2};
+
+  ${(props) => props.isHover ? 
+      `border: 1px solid ${colors.pink_dark};`
+      : ``
+  }
+
+  & .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+    /* ${(props) => props.isHover ? 
+      `filter: grayscale(0) brightness(1);`
+      : `filter: grayscale(1) brightness(0.6);`
+    } */
+    transition: all 0.1s ease-in;
+    position: relative;
+  }
+
+  & .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    z-index: 1;
+
+    & button {
+      background-color: ${colors.pink_dark};
+      padding: 0 1rem;
+      border: none;
+      border-radius: 4px;
+      transition: all 0.1s ease-in;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+    & h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: ${colors.white};
+      text-transform: capitalize;
+    }
+  }
+  ::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgb(0,0,0,0.1);
+      background: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 17%, rgba(0,0,0,0) 100%);
+      border-radius: 16px;
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
 `
