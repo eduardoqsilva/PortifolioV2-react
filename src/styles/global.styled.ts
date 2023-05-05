@@ -18,5 +18,13 @@ export const GlobalStyled = createGlobalStyle`
   }
   button {
     cursor: pointer;
+    &:focus {
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+  a {
+    &:focus {
+      -webkit-tap-highlight-color: transparent;
+    }
   }
 `
