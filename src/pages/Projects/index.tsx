@@ -19,22 +19,22 @@ export function Projects() {
           <CardProject
             title="SolarCalc"
             img={solar}
-            link={''}
+            link={'https://solar-calc-lilac.vercel.app/'}
           />
           <CardProject
             title="acade login"
             img={acade}
-            link={''}
+            link={'https://acade.vercel.app/'}
           />
           <CardProject
             title="pomodoro"
             img={pomodoro}
-            link={''}
+            link={'https://solar-calc-lilac.vercel.app/'}
           />
           <CardProject
             title="comicly"
             img={comycly}
-            link={''}
+            link={'https://comicly-react.vercel.app/'}
           />
         </GridProjectsWrapper>
       </ContainerProjects>
