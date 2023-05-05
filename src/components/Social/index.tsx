@@ -13,7 +13,7 @@ export function SocialHome() {
           weight: 'regular'
         }}
       >
-        <Link target={'_blank'} to={'https://www.linkedin.com/feed/'}>
+        <Link target={'_blank'} to={'https://www.linkedin.com/in/eduardoqsilva/'}>
           <LinkedinLogo />
         </Link>
         <Link target={'_blank'} to={'https://github.com/eduardoqsilva'}>
