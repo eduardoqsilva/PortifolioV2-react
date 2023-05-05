@@ -16,4 +16,7 @@ export const GlobalStyled = createGlobalStyle`
     overflow-x: hidden;
     max-width: 100vh;
   }
+  button {
+    cursor: pointer;
+  }
 `
