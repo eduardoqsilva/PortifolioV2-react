@@ -32,10 +32,13 @@ export const FooterContainer = styled.footer`
       margin-top: 1rem;
 
       & button {
-        padding: 0.2rem 3rem;
+        padding: 0.28rem 3rem;
         border: none;
         border-radius: 4px;
         transition: all 0.2s ease-in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
           transform: scale(1.05);
