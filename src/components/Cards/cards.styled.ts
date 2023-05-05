@@ -83,7 +83,7 @@ export const HeaderExperienceCard = styled.div`
 `
 
 export const CardFormationWrapper = styled.div`
-  max-width: fit-content;
+  width: 100%;
   height: fit-content;
   padding: 1.5rem;
   background-color: ${colors.gray2};

@@ -73,7 +73,7 @@ export function CardProject({title, img, link}:CardProjectType) {
       <img className="img" src={img}/>
       <div className="wrapper">
         <h2>{title}</h2>
-        <Link to={link}>
+        <Link target={'_blank'} to={link}>
           <button onClick={() => setIsHover(true)}>
             <ArrowRight size={20} color={colors.white}/>
           </button>
