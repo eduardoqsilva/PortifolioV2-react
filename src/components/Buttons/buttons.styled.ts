@@ -23,10 +23,10 @@ export const ButtonHomeStyled = styled.button`
   letter-spacing: 0.13em;
   color: ${colors.white};
   
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
   
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
   &:active {
     transform: scale(0.95);
