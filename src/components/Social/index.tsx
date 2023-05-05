@@ -13,13 +13,13 @@ export function SocialHome() {
           weight: 'regular'
         }}
       >
-        <Link to={'/'}>
+        <Link target={'_blank'} to={'https://www.linkedin.com/feed/'}>
           <LinkedinLogo />
         </Link>
-        <Link to={'/'}>
+        <Link target={'_blank'} to={'https://github.com/eduardoqsilva'}>
           <GithubLogo />
         </Link>
-        <Link to={'/'}>
+        <Link target={'_blank'} to={"https://api.whatsapp.com/send?phone=5564993252497"}>
           <WhatsappLogo />
         </Link>
       </IconContext.Provider>
