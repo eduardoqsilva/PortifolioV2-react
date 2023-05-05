@@ -9,3 +9,8 @@ export const LottieContainer = styled.div`
     height: fit-content;
   }
 `
+
+export const LottieContainerMail = styled.div`
+  width: 100%;
+  height: 100%;
+`
