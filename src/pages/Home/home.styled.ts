@@ -80,6 +80,10 @@ export const ButtonWrapper = styled.div`
 
   margin-top: 3rem;
 
+  & a {
+    text-decoration: none;
+  }
+
   @media (max-width: 800px) {
     flex-direction: column;
   }
