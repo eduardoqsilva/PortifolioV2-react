@@ -32,12 +32,18 @@ export function Contact() {
 
     emailjs.send(service, template, templateParams, key)
     .then((res) => {
-      setShow(true)
       setIsError(false)
-    }).catch((err) => {
       setShow(true)
+    }).catch((err) => {
       setIsError(true)
+      setShow(true)
       console.error(err)
+    })
+
+    setData({
+      name: '',
+      email: '',
+      message: ''
     })
   }
 
@@ -68,6 +74,7 @@ export function Contact() {
                 ...data,
                 name: e.currentTarget.value
               })}
+              value={data.name}
               required
             />
           </div>
@@ -80,6 +87,7 @@ export function Contact() {
                 ...data,
                 email: e.currentTarget.value
               })}
+              value={data.email}
               required
             />
           </div>
@@ -91,6 +99,7 @@ export function Contact() {
               ...data,
               message: e.currentTarget.value
             })}
+            value={data.message}
             required
           />
           <button>Enviar</button>
