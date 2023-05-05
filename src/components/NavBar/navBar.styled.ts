@@ -110,13 +110,14 @@ export const NavItems = styled.ul<NavItems>`
 
 
 export const Menu = styled.div`
-  width: 3rem;
-  height: 2.5rem;
+  width: 2.8rem;
+  height: 2.2rem;
   position: relative;
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  align-items: flex-end;
   z-index: 99;
 
   @media (max-width: 800px) {
@@ -135,20 +136,22 @@ export const Menu = styled.div`
   & span {
     display: block;
     width: 100%;
-    height: 7px;
+    height: 5px;
     background-color: ${colors.white};
     border-radius: 4px;
     transition: all 0.2s ease-in;
   }
-
+  /* & .trace:nth-child(3) {
+    width: 70%;
+  } */
   & .check:checked ~ .trace:nth-child(2) {
-    transform: translateY(17px) rotate(45deg);
+    transform: translateY(15px) rotate(45deg);
   }
   & .check:checked ~ .trace:nth-child(3) {
     transform: translateX(100%);
     opacity: 0;
   }
   & .check:checked ~ .trace:nth-child(4) {
-    transform: translateY(-17px) rotate(-45deg);
+    transform: translateY(-15px) rotate(-45deg);
   }
 `
