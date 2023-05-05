@@ -10,7 +10,7 @@ export function Sobre() {
         <DevFrontAnimate />
         <WrapperTextSobre>
           <TitleH1>sobre mim</TitleH1>
-          <p>Olá! Meu nome é Eduardo Queiroz e sou um desenvolvedor front-end com experiência em React, TypeScript e styled-components. Sou apaixonado por criar interfaces de usuário incríveis e funcionais que ajudam as pessoas a resolver problemas. Meus projetos mais recentes incluem um app web de calculo de energia solar e um pomodoro. Eu amo trabalhar em equipe e estou sempre procurando aprender coisas novas. Se você está procurando um desenvolvedor front-end que possa ajudá-lo a criar projetos incríveis, entre em contato comigo!</p>
+          <p>Olá! Meu nome é Eduardo Queiroz e sou um desenvolvedor front-end com experiência em React, TypeScript e styled-components. Sou apaixonado por criar interfaces de usuário incríveis e funcionais que ajudam as pessoas a resolver problemas. Meus projetos mais recentes incluem um app web de calculo de energia solar e um app web de pomodoro. Eu amo trabalhar em equipe e estou sempre procurando aprender coisas novas. Se você está procurando um desenvolvedor front-end que possa ajudá-lo a criar projetos incríveis, entre em contato comigo!</p>
         </WrapperTextSobre>
       </ContainerSobre>
       <ContainerExperience>
@@ -39,18 +39,18 @@ export function Sobre() {
                 name={"Análise e desenvolvimento de sistemas"}
               />
               <CardFormation
-                date={"02/2020 - 01/2023"}
-                type={"Graduação"}
+                date={"07/2022 -  01/2023"}
+                type={"Curso"}
                 finish={"Concluída"}
-                title={"Centro Universitário Leonardo da Vinci"}
-                name={"Análise e desenvolvimento de sistemas"}
+                title={"Oracle Next Education (one)"}
+                name={"Curso de desenvolvimento front-end "}
               />
               <CardFormation
-                date={"02/2020 - 01/2023"}
-                type={"Graduação"}
+                date={"08/2022 -  11/2022"}
+                type={"Curso"}
                 finish={"Concluída"}
-                title={"Centro Universitário Leonardo da Vinci"}
-                name={"Análise e desenvolvimento de sistemas"}
+                title={"Google Ux Design Coursera"}
+                name={"Curso de Ux design do google"}
               />
             </div>
           </div>
