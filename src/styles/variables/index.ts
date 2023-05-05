@@ -4,7 +4,7 @@ export const fonts = {
 } as const
 
 export const colors = {
-  pink_light:'#FF2CDF',
+  pink_light: '#FF2CDF',
   blu_dark: '#0014FF',
   blu_light: '#00E1FD',
   pink_dark: '#FC007A',
@@ -24,8 +24,4 @@ export const colors = {
   gray7: '#E1E1E6',
 
   white: '#FFFF',
-  
-  chart1: '#d9d9d9',
-  chart2: '#343338',
-
 } as const
