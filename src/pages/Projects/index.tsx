@@ -29,7 +29,7 @@ export function Projects() {
           <CardProject
             title="pomodoro"
             img={pomodoro}
-            link={'https://solar-calc-lilac.vercel.app/'}
+            link={'https://pomodoro-react-zeta.vercel.app/'}
           />
           <CardProject
             title="comicly"
