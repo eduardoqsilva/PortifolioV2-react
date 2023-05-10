@@ -1,6 +1,6 @@
 # Portifólio
 
-Este é um projeto feito em React, Styled-Components e TypeScript trata-se de uma página web para a esposição de projetos.
+Este é um projeto feito em React, Styled-Components e TypeScript trata-se de uma página web para a exposição de projetos.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
