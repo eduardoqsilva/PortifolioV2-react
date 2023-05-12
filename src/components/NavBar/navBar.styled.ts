@@ -108,10 +108,12 @@ export const NavItems = styled.ul<NavItems>`
   }
 `
 
-
-export const Menu = styled.div`
-  width: 2.8rem;
-  height: 2.2rem;
+interface Menu {
+  location: string
+}
+export const Menu = styled.div<Menu>`
+  width: 3.5rem;
+  height: 3rem;
   position: relative;
   display: none;
   flex-direction: column;
@@ -119,6 +121,9 @@ export const Menu = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   z-index: 99;
+  background-color: ${(props) => props.location === '/' ? 'transparent' : `${colors.gray3}`};
+  padding: 0.5rem;
+  border-radius: 4px;
 
   @media (max-width: 800px) {
     display: flex;
@@ -145,13 +150,13 @@ export const Menu = styled.div`
     width: 70%;
   } */
   & .check:checked ~ .trace:nth-child(2) {
-    transform: translateY(15px) rotate(45deg);
+    transform: translateY(14px) rotate(45deg);
   }
   & .check:checked ~ .trace:nth-child(3) {
     transform: translateX(100%);
     opacity: 0;
   }
   & .check:checked ~ .trace:nth-child(4) {
-    transform: translateY(-15px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
   }
 `

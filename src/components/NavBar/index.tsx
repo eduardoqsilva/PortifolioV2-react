@@ -1,6 +1,6 @@
 import { Code } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { colors } from "../../styles/variables";
 import { Menu, NavItems, NavStyled } from "./navBar.styled";
 
@@ -14,6 +14,8 @@ export function NavBar({Items, Links}:NavType) {
 
   const [show, setShow] = useState(false)
   const [scroll, setScroll] = useState(0)
+  const location = useLocation().pathname
+  console.log(location)
 
   function handleClickMenu(e:React.ChangeEvent<HTMLInputElement>) {
     const check = e.currentTarget.checked
@@ -36,7 +38,7 @@ export function NavBar({Items, Links}:NavType) {
   return (
     <NavStyled scroll={scroll}>
       <Link to={'/'}><Code weight="bold" size={52} color={colors.white}/></Link>
-        <Menu>
+        <Menu location={location}>
           <input type="checkbox" className="check" checked={show} onChange={handleClickMenu}/>
           <span className="trace"></span>
           <span className="trace"></span>
